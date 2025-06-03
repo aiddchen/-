@@ -1,0 +1,146 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: $gray-bg;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+
+    &:hover{
+        color: $primary;
+    }
+}
+
+.a-default{
+    color: $primary;
+    text-decoration: underline;
+}
+
+h1{
+    font-size: 7.5rem;
+    font-weight: 900;
+    color: $primary;
+    margin-bottom: .75rem;
+
+    @media (max-width: 768px) {
+        font-size: 3.25rem;
+    }
+}
+
+h2{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+h4{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+
+
+
+// style
+.position-relative{
+    position: relative;
+}
+
+.flex{
+    display: flex;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.block{
+    display: block;
+}
+
+.flex-reverse{
+    flex-direction: row-reverse;
+}
+
+.primary{
+    color: $primary !important;
+}
+
+.fs-lg{
+    font-size: 1.75rem;
+}
+
+.fs-md{
+    font-size: 1.5rem;
+}
+
+.fw700{
+    font-weight: 700;
+}
+
+.highlight{
+    color: $primary;
+    font-size: 1.5rem;
+}
+
+.mb24{
+    margin-bottom: 24px;
+}
+
+.mt24{
+    margin-top: 24px;
+}
+
+.mb16{
+    margin-bottom: 16px;
+}
+
+.mt16{
+    margin-top: 16px;
+}
+
+.maxw416{
+    max-width: 416px;
+}
+
+.container{
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 80px 0;
+
+    &-narrow{
+        max-width: 636px;
+        padding: 80px 0;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+}
+
+.border-secondary{
+    border: solid 1px $secondary;
+}
+
+.txt-gray{
+    color: $gray;
+}
