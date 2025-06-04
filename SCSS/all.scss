@@ -59,18 +59,23 @@
         display: flex;
 
         img{
-            flex: 1 1 45%;
+            // flex: 1 1 45%;
             z-index: -1;
             width: 100%;
             height: 100%;
         }
+    }
+
+    &moreinfo {
+        font-size: 1.75rem;
+        text-align: end;
     }
 }
 
 
 .txt-{
     &box{
-        flex: 1 1 45%;
+        flex: 1 1 42.5%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -113,6 +118,7 @@
     z-index: 100;
     color: $primary;
     font-size: 44px;
+    line-height: 1;
     cursor: pointer;
 
     &::after{
@@ -166,6 +172,7 @@
 
         img{
             border: solid 24px #EDEDED;
+            flex: 1 1 57.5%;
         }
     }
 
@@ -175,6 +182,7 @@
             margin-left: -194px;
             max-width: 526px;
             padding: 80px 40px;
+            background-color: #fff;
         }
 
         &2{
@@ -196,7 +204,7 @@
         }
 
         &item{
-            width: 294px;
+            flex: 1 1 25%;
 
             img{
                 max-width: 80px;
@@ -210,6 +218,7 @@
 
             .checkbox li{
                 margin-bottom: 8px;
+                color: $gray;
             }
 
             hr{
@@ -255,13 +264,20 @@
 
 
 .contact-{
-    &box li{
-        border-bottom: #000 solid 1px;
+    &box {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        li {
+            border-bottom: #000 solid 1px;
+        }
     }
+
     &item{
         display: flex;
         justify-content: space-between;
-        padding: 16px 0;
+        padding-bottom: 16px;
 
         &:hover{
             transform: scale(1.05);
@@ -402,3 +418,5 @@
     }
 }
 
+
+@import "rwd";
