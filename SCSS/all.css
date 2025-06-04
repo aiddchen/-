@@ -170,7 +170,7 @@ img {
 }
 
 .maxw416 {
-  max-width: 416px;
+  flex: 1 1 calc(33% - 24px);
 }
 
 .container {
@@ -209,7 +209,7 @@ br.rwd {
 .banner {
   flex: 1 1 50%;
 }
-.banner-01 {
+.banner-01, .banner-02 {
   background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/16da9aa899a5190ed2d5bdfe48ae1cc631b95463/2025-web-camp/desktop/index/Hero%20Section2.png);
   padding: 0 80px;
   background-size: cover;
@@ -726,6 +726,13 @@ br.rwd {
   .contact-item p {
     font-size: 1.5rem;
   }
+  .blog-search {
+    width: 100%;
+  }
+  .blog-wrap {
+    flex-direction: column;
+    gap: 32px;
+  }
   .container {
     padding: 64px 12px;
     width: 100%;
@@ -736,7 +743,34 @@ br.rwd {
   br.rwd {
     display: inline;
   }
+  .banner-00 {
+    aspect-ratio: 1/1;
+  }
+  .banner-00 img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right;
+       object-position: right;
+  }
   .banner-01 {
+    padding: 24px;
+  }
+  .banner-02 {
     padding: 12px;
+  }
+  .banner-10 {
+    aspect-ratio: 1/1;
+  }
+  .banner-10 img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .banner-11 {
+    padding: 48px 12px;
+  }
+  .footer {
+    display: none;
   }
 }/*# sourceMappingURL=all.css.map */

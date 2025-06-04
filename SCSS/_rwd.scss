@@ -71,7 +71,6 @@
         &list-wrap {
             flex-direction: column;
             gap: 24px;
-            // ============================
         }
 
         &title {
@@ -100,6 +99,17 @@
         }
     }
 
+    .blog- {
+        &search {
+            width: 100%;
+        }
+
+        &wrap {
+            flex-direction: column;
+            gap: 32px;
+        }
+    }
+
 
 
     // style
@@ -119,8 +129,39 @@
 
     // module
     .banner {
+        &-00 {
+            aspect-ratio: 1/1;
+
+            img {
+                object-fit: cover;
+                object-position: right;
+            }
+
+        }
+
         &-01 {
+            padding:24px;
+        }
+
+        &-02 {
             padding: 12px;
         }
+
+        &-10 {
+            aspect-ratio: 1/1;
+
+            img {
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        &-11 {
+            padding: 48px 12px;
+        }
+    }
+
+    .footer {
+        display: none;
     }
 }

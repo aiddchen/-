@@ -119,7 +119,7 @@ img{
 }
 
 .maxw416{
-    max-width: 416px;
+    flex: 1 1 calc(33% - 24px);
 }
 
 .container{
