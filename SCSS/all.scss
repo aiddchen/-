@@ -12,16 +12,15 @@
 
     &-txt-box{        
         position: absolute;
-        top: 80%;
-        left: -20.5%;
-        // width: 112%;
-        max-width: 1077px;
+        top: -125px;
+        left: 40%;
         padding: 80px 40px;        
         background-color: #fff;
         margin-right: 80px;
 
         p{
             margin-bottom: 16px;
+            font-size: 1.75rem;
         }
     }
 }

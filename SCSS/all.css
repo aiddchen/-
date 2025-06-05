@@ -321,15 +321,15 @@ br.rwd {
 }
 .banner-txt-box {
   position: absolute;
-  top: 80%;
-  left: -20.5%;
-  max-width: 1077px;
+  top: -125px;
+  left: 40%;
   padding: 80px 40px;
   background-color: #fff;
   margin-right: 80px;
 }
 .banner-txt-box p {
   margin-bottom: 16px;
+  font-size: 1.75rem;
 }
 
 .social-media-icons {
@@ -747,6 +747,21 @@ br.rwd {
   br.rwd {
     display: inline;
   }
+  .banner-txt-box {
+    top: -200px;
+    left: 0;
+    margin: 0 12px;
+    padding: 40px 24px;
+  }
+  .banner-txt-box p {
+    font-size: 1.5rem;
+  }
+  .h224 {
+    height: 224px;
+  }
+  .h252 {
+    height: 252px;
+  }
   .banner-00 {
     aspect-ratio: 1/1;
   }
@@ -758,6 +773,9 @@ br.rwd {
   }
   .banner-01 {
     padding: 24px;
+  }
+  .banner-01 h1 {
+    margin: 0;
   }
   .banner-02 {
     padding: 12px;
