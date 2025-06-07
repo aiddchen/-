@@ -56,6 +56,10 @@
     }
 
     .example- {
+        &banner {
+            flex-direction: column;
+        }
+
         &txt-card-1,
         &txt-card-2 {
             margin: 0;
@@ -143,6 +147,10 @@
 
     .h252   {
         height: 252px;
+    }
+
+    .maxw416 {
+        max-width: 100%;
     }
 
 
